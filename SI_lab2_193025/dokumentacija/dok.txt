@@ -1,0 +1,56 @@
+193025 SI_Lab 2
+
+Presmetkata za ciklomatska kompleksnost e naprevena na dva nacini za da se uverime deka dobivame ist rezultat.
+Prv nacin e da se izbrojaat site rebra i site jazli i forumalata e:
+Rebra - Jazli + 2.
+Presmetkata e: 31 - 25 + 2 = 8
+
+Vtor nacin e da se izbrijaat site predikatni jazli i formulata e:
+Predikatni jazli + 1.
+Predikatni jazli se : 22, 6, 7, 11, 12, 15, 19. Vkupno 7 predikati.
+Presmetkata e: 7 + 1 = 8
+
+Za Multiple Conditon. Treba da se odredat site mozni nacini na koj sto moze da se ispolni
+eden if uslov. Takvi uslovi koi primaat povekje moltiple conditions imame 4 vo funkcijata.
+prvite tri if primaat po 3 moznosti -> TX , FF, FT. Dodeka pak posledniot if 
+moze da ima 4 moznosti -> TTT, TTF, TFX, FXX.
+Celata tabela so moznosti moze da ja poglednete vo multiple_conditon.png
+
+Za Every Branch gi imame slednite rebra:
+2.1 - 2.2
+2.2 - 3 4 5
+3 4 5 - 6
+6 - 7
+7 - 8
+8 - 25
+7 - 9
+9 - 10
+10 - 25
+6 - 11
+11 - 12
+12 - 13
+13 - 25
+12 - 14
+14 - 15
+15 - 16
+16 - 23
+23 - 24
+24 - 25
+15 - 17
+17 - 18
+18 - 25
+11 - 19
+19 - 20
+20 - 23
+19 - 21
+21 - 22
+22 - 25 
+23 - 2.3
+2.3 - 2.2
+2.2 - 23
+
+Potrebni ni se minimum 8 test slucai.
+1. h=-1 min=X sec=X	2. h=25 min=X sec=X	3. h=1 min=-1 sec=X	
+4. h=1 min=2 sec=2	5. h=1 min=2 sec=62	6. h=24 min=0 sec=0	
+7. h=24 min=0 sec=1	8. prazna lista vo argument na funkcijata
+Celosnata tabela moze da ja poglednete vo slika -> every_branch.png
